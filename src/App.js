@@ -5,6 +5,7 @@ import Event from "./pages/event/event";
 import Checkout from "./pages/checkout/checkout";
 import Navbar from "./component/navbar/navbar";
 import Error404 from "./pages/error/error404";
+import Login from "./pages/login/login";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="list" element={<List />} />
         <Route path="event" element={<Event />} />
         <Route path="checkout" element={<Checkout />} />
+        <Route path="login" element={<Login />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </Router>

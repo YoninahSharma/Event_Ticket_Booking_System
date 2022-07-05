@@ -1,13 +1,15 @@
 import "./navbar.css";
+import {  Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navContainer">
-                <span className="logo">Event Booking.com</span>
+                <span className="logo"><Link to="/" style={{textDecoration:'none', color:'white'}}>EventBooking.com</Link></span>
                 <input type="text" placeholder="Where are you going?" className="navSearchInput" />
-                <button className="navButton">Register</button>
-                <button className="navButton">Login</button>
+                <button className="navButton">
+                    <Link to="/login" style={{textDecoration:'none', color:'black'}}>Login</Link>
+                </button>
             </div>
         </div>
 

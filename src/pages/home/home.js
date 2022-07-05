@@ -1,9 +1,10 @@
+import BannerCarousel from "../../component/bannerCarousel/bannerCarousel";
 import "./home.css";
 
 const Home = () => {
     return (
         <div>
-            <h1>Home Page</h1>
+            <BannerCarousel />
         </div>
     )
 }
