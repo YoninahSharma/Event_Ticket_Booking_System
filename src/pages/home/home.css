@@ -1,0 +1,18 @@
+.homeContainer{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.homeContainer h1{
+    font-size: 20px;
+}
+
+.recommended{
+    font-size: 28px;
+    font-weight: 600;
+    
+}
+
+.titleContainer{
+    margin: 20px 0 20px 0;
+}

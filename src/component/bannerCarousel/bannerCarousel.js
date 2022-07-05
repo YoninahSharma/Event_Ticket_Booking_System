@@ -7,10 +7,10 @@ const BannerCarousel = () => {
     return (
         <Carousel showThumbs={false}>
                 <div>
-                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1656401872092_ssf_web.jpg" />
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1656401872092_ssf_web.jpg" alt="banner1" />
                 </div>
                 <div>
-                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1656936914451_web.jpg" />
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1656936914451_web.jpg" alt="banner2"/>
                 </div>
                 {/* <div>
                     <img src="assets/3.jpeg" />
