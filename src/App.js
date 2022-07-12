@@ -6,6 +6,8 @@ import Checkout from "./pages/checkout/checkout";
 import Navbar from "./component/navbar/navbar";
 import Error404 from "./pages/error/error404";
 import Login from "./pages/login/login";
+import Footer from "./component/footer/footer";
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -1,18 +1,98 @@
 import "./cardCarousel.css";
-import { Carousel } from '@trendyol-js/react-carousel';
-import EventCard from "../eventCard/eventCard";
+import Slider from "react-slick";
+import "../../../node_modules/slick-carousel/slick/slick";
+import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+import EventCard from "../eventCard/eventCard"
 
 const CardCarousel = () => {
+    const settings = {
+        dots: true,
+        arrows:true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        initialSlide: 0,
+    };
+
     return (
-    <Carousel show={5} slide={2} transition={0.5}>
-        <EventCard/>
-        <EventCard/>
-        <EventCard/>
-        <EventCard/>
-        <EventCard/>
-        <EventCard/>
-        <EventCard/>
-    </Carousel>
-    )
-}
+        <div>
+            <Slider {...settings}>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+                <div>
+                    <EventCard />
+                </div>
+            </Slider>
+        </div>
+    );
+};
+
 export default CardCarousel;
+
+
+
+
+// constructor(props) {
+//     super(props);
+//     this.state = {
+//       slides: [1, 2, 3, 4, 5, 6]
+//     };
+//     this.click = this.click.bind(this);
+//   }
+//   click() {
+//     const { slides } = this.state;
+//     this.setState({
+//       slides:
+//         slides.length === 6 ? [1, 2, 3, 4, 5, 6, 7, 8, 9] : [1, 2, 3, 4, 5, 6]
+//     });
+//   }
+//   render() {
+//     const settings = {
+//       dots: true,
+//       infinite: true,
+//       speed: 500,
+//       slidesToShow: 3,
+//       slidesToScroll: 3
+//     };
+//     return (
+//       <div>
+//         <h2>Dynamic slides</h2>
+//         <button className="button" onClick={this.click}>
+//           Click to change slide count
+//         </button>
+//         <Slider {...settings}>
+//           {this.state.slides.map(function(slide) {
+//             return (
+//               <div key={slide}>
+//                 <h3>{slide}</h3>
+//               </div>
+//             );
+//           })}
+//         </Slider>
+//       </div>
+//     );
+//   }
+// }
