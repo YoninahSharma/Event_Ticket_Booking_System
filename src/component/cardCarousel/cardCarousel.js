@@ -4,15 +4,16 @@ import "../../../node_modules/slick-carousel/slick/slick";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import EventCard from "../eventCard/eventCard"
 
+
 const CardCarousel = () => {
     const settings = {
-        dots: true,
-        arrows:true,
-        infinite: true,
+        dots: false,
+        infinite: false,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: 5.5,
         slidesToScroll: 3,
         initialSlide: 0,
+        arrows: true,
     };
 
     return (
