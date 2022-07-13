@@ -6,13 +6,34 @@
     display: block;
     width: 50px !important;
     height: 50px !important;
-    padding: 0px;
-    transform: translate(0, -50%);
+    padding: 10px 0 !important;
+    transform: translate(0, -60%) !important;
     cursor: pointer;
     color: #000000 !important;
     border: none;
     border-radius: 50%;
     outline: none;
-    background: #000000 !important;
+    background: #0000004f !important;
     z-index: 20 !important;
+}
+
+
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 25px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+    font-family: 'slick';
+    font-size: 25px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

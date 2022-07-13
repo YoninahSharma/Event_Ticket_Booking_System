@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Gaurav Kapoor Live",
+        "date": "17th JUly 2022",
+        "type": "Comedy Show",
+        "artist": "Gaurav Kapoor",
+        "location": "Nilgiri Hills Public School, F-1, F Block, Sector 50, Noida, NCR 201303, India",
+        "place": "Maharana Pratap Auditorium: Noida",
+        "price": "₹499",
+        "description": "Gaurav Kapoor has won almost every open-mic he has ever participated. His razor-sharp wit will cut deep in your weekly blues. You’ll have a good cry..laughing!",
+        "card-img": "https://imgbb.com/",
+        "banner-img": "https://i.ibb.co/jhLf6sF/gaurav-banner.png"
+    },
+
+    {
+        "id": 2,
+        "title": "Gaurav Kapoor Live",
+        "date": "17th JUly 2022",
+        "type": "Comedy Show",
+        "artist": "Gaurav Kapoor",
+        "location": "Nilgiri Hills Public School, F-1, F Block, Sector 50, Noida, NCR 201303, India",
+        "place": "Maharana Pratap Auditorium: Noida",
+        "price": "₹499",
+        "description": "Gaurav Kapoor has won almost every open-mic he has ever participated. His razor-sharp wit will cut deep in your weekly blues. You’ll have a good cry..laughing!",
+        "card-img": "https://imgbb.com/",
+        "banner-img": "https://i.ibb.co/jhLf6sF/gaurav-banner.png"
+    }
+]
