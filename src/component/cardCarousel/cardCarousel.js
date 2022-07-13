@@ -2,59 +2,55 @@ import "./cardCarousel.css";
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import EventCard from "../eventCard/eventCard"
-
+import EventCard from "../eventCard/eventCard";
 
 const CardCarousel = () => {
-    const settings = {
-        dots: false,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 5.5,
-        slidesToScroll: 3,
-        initialSlide: 0,
-        arrows: true,
-    };
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4.5,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    arrows: true,
+  };
 
-    return (
+  return (
+    <div>
+      <Slider {...settings}>
         <div>
-            <Slider {...settings}>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-                <div>
-                    <EventCard />
-                </div>
-            </Slider>
+          <EventCard />
         </div>
-    );
+        <div>
+          <EventCard />
+        </div>
+        <div>
+          <EventCard />
+        </div>
+        <div>
+          <EventCard />
+        </div>
+        <div>
+          <EventCard />
+        </div>
+        <div>
+          <EventCard />
+        </div>
+        <div>
+          <EventCard />
+        </div>
+        <div>
+          <EventCard />
+        </div>
+        <div>
+          <EventCard />
+        </div>
+      </Slider>
+    </div>
+  );
 };
 
 export default CardCarousel;
-
-
-
 
 // constructor(props) {
 //     super(props);
