@@ -7,8 +7,7 @@ import Navbar from "./component/navbar/navbar";
 import Error404 from "./pages/error/error404";
 import Login from "./pages/login/login";
 import Footer from "./component/footer/footer";
-
-
+import "./App.css";
 
 function App() {
   return (
