@@ -1,4 +1,11 @@
 import "./event.css";
+import { Link } from "react-router-dom";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import { red, blue, purple } from '@mui/material/colors';
+
+
 
 const Event = () => {
   return (
@@ -17,7 +24,7 @@ const Event = () => {
             <span className="eventInfo">Comdey Show | Hindi | 2 hrs</span>
           </div>
           <div>
-            <button className="bookNow">Book Now</button>
+            <button className="bookNow">  <Link to="/checkout" style={{textDecoration:'none', color:'white'}}>Book Now</Link></button>
           </div>
         </div>
         <div className="eventDateTimePrice">
@@ -30,9 +37,10 @@ const Event = () => {
             <span className="artist">Artist</span>
             <span className="artistName">Gaurav Kapoor</span>
             <div className="socialMedia">
-              <span>F</span>
-              <span>I</span>
-              <span>Y</span>
+              <InstagramIcon sx={{ color: purple[500] }} />
+              <FacebookIcon sx={{ color: blue[500] }} />
+              <YouTubeIcon sx={{ color: red[500] }} />
+
             </div>
           </div>
           <div className="eventDescription">

@@ -1,0 +1,21 @@
+.checkout {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.checkoutLayout {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 50px;
+}
+
+.ticketInfo {
+    background-color: black;
+    height: 200px;
+}
+
+.checkoutDetail {
+    background-color: red;
+    height: 200px;
+}

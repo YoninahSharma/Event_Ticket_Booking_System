@@ -21,30 +21,7 @@ const CardCarousel = () => {
         <div>
           <EventCard />
         </div>
-        <div>
-          <EventCard />
-        </div>
-        <div>
-          <EventCard />
-        </div>
-        <div>
-          <EventCard />
-        </div>
-        <div>
-          <EventCard />
-        </div>
-        <div>
-          <EventCard />
-        </div>
-        <div>
-          <EventCard />
-        </div>
-        <div>
-          <EventCard />
-        </div>
-        <div>
-          <EventCard />
-        </div>
+       
       </Slider>
     </div>
   );
