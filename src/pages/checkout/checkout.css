@@ -8,14 +8,84 @@
     flex-direction: row;
     flex: 1;
     gap: 50px;
+    margin-top: 50px;
 }
 
 .ticketInfo {
-    background-color: black;
-    height: 200px;
+    background-color: rgb(236, 245, 255);
+    
+    padding: 20px;
+
+}
+
+.ticketInfoTitle{
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.ticketInfoDetail{
+    background-color: white;
+    padding: 10px 5px;
+    margin-top: 10px;
+    border-radius: 6px;
 }
 
 .checkoutDetail {
-    background-color: red;
-    height: 200px;
+    background-color: white;
+    padding: 20px;
+}
+
+.checkoutDetailTitlePrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+    gap: 20px;
+}
+
+
+
+.divider{
+    height: 1px;
+    background-color: #b1b1b1;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.checkoutDetailDateTimeVenue{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.checkoutDetailTotalPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkoutDetailBookingPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkoutDetailAmountPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.checkoutDetailBook{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 100%;
 }
