@@ -6,18 +6,20 @@ import { Carousel } from 'react-responsive-carousel';
 const BannerCarousel = () => {
     return (
         <Carousel showThumbs={false}>
-                <div>
-                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1656401872092_ssf_web.jpg" alt="banner1" />
-                </div>
-                <div>
-                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1656936914451_web.jpg" alt="banner2"/>
-                </div>
-                {/* <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div> */}
+            <div>
+                <img src="https://i.ibb.co/Dk4jdQV/bassb.png" alt="banner1" />
+            </div>
+            <div>
+                <img src="https://i.ibb.co/HXxV9Fy/bieberb.png" alt="banner2" />
+            </div>
+            <div>
+                <img src="https://i.ibb.co/VH44LbG/rude.png" alt="banner3" />
+            </div>
+            <div>
+                <img src="https://i.ibb.co/G9QCKZM/ssf.png" alt="banner4" />
+            </div>
         </Carousel>
-        
+
     )
 }
 export default BannerCarousel;

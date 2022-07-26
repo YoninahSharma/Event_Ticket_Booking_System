@@ -1,6 +1,5 @@
 .homeContainer{
-    margin: 0 auto;
-    width: 80%;
+   
 }
 
 .homeContainer h1{
@@ -16,3 +15,28 @@
 .titleContainer{
     margin: 20px 0 20px 0;
 }
+
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 100px;
+  }
+  .home_panelList-wrap,
+  .home_panel-wrap,
+  .home_list-wrap {
+    overflow-y: auto;
+  }
+  
+  .home_panelList-wrap {
+    flex: 1;
+    display: flex;
+  }
+  .home_panel-wrap {
+    flex-basis: 280px;
+    padding: 1rem;
+  }
+  .home_list-wrap {
+    flex: 1;
+    padding: 1rem;
+  }
