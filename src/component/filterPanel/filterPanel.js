@@ -1,5 +1,6 @@
 import FilterListToggle from '../filterListToggle/filterListToggle';
 import { categoryList, ratingList } from '../../event.js';
+
 import "./filterPanel.css";
 // import CheckboxProton from '../checkBoxProton/checkBoxProton';
 import SliderProton from '../sliderProton/sliderProton';
@@ -44,6 +45,12 @@ const FilterPanel = ({
         selectToggle={selectRating}
       />
     </div>
+    <button className="FilterButton">
+      <a href='/home' style={{textDecoration:'none', color:'white'}}>
+        Clear Filter
+      </a>
+
+    </button>
   </div>
 );
 

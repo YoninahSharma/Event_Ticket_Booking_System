@@ -13,6 +13,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.logoCenter{
+    text-align: center;
+}
 
 .logo{
     font-weight: 500;

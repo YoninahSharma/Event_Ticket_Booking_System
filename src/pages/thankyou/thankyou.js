@@ -7,7 +7,7 @@ const Thankyou = () => {
             <h1>Thank you for Booking the Ticket </h1>
            
             <button className="thankyouButton">
-                            <Link to="/" style={{textDecoration:'none', color:'white'}}>
+                            <Link to="/home" style={{textDecoration:'none', color:'white'}}>
                             Go Back to Home Page
                             </Link>
                         </button>
