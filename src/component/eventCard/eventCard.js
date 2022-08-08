@@ -1,7 +1,7 @@
 import "./eventCard.css";
 
 const EventCard = ({
-    item: { cardImg, title, place, rating },
+    item: { cardImg, title, place, price, rating },
 }) => {
     return (
         <div className="eventCard">
@@ -10,8 +10,13 @@ const EventCard = ({
             </div>
             <div className="cardDetail">
                 <span className="eventName">{title}</span>
-                <span className="eventRating">{rating} ⭐</span>
                 <span className="eventLocation">{place}</span>
+                <div className="cardInfoFlex">
+                    <span className="eventPrice">₹{price}</span>
+                    <span className="eventRating">{rating} ⭐</span>
+                </div>
+
+
             </div>
         </div>
     )

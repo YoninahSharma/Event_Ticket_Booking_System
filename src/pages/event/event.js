@@ -1,18 +1,24 @@
 import "./event.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { red, blue, purple } from '@mui/material/colors';
+import { eventsList } from "../../event";
 
 
 
-const Event = () => {
+const Event = ({item}) => {
+  const { id } = useParams();
+
+  const singleEvent = eventsList.find(item => item.id === parseInt(id))
+  
+  const {title, date, time, category, artist, city, location, place, price, duration, rating, language, description, bannerImg } = singleEvent
   return (
     <div className="event">
       <div className="eventBannerContaine">
         <img
-          src="https://i.ibb.co/D5Wm5Xr/gaurav-banner.png"
+          src={bannerImg}
           alt="eventBanner"
           className="eventBanner"
         />
@@ -20,22 +26,23 @@ const Event = () => {
       <div className="eventContainer">
         <div className="eventDetail">
           <div className="eventTitleInfo">
-            <span className="eventTitle">Gaurav Kapoor Live</span>
-            <span className="eventInfo">Comdey Show | Hindi | 2 hrs</span>
+            <span className="eventTitle">{title}</span>
+            <span className="eventInfo">{category} Show | {language} | {duration}</span>
           </div>
           <div>
-            <button className="bookNow">  <Link to="/checkout" style={{textDecoration:'none', color:'white'}}>Book Now</Link></button>
+            <button className="bookNow">  <Link  to={`/checkout/${id}`} style={{ textDecoration: 'none', color: 'white' }}>Book Now</Link></button>
           </div>
         </div>
         <div className="eventDateTimePrice">
-          <span className="eventDate">17th July 2022 at 7 PM</span>
-          <span className="eventPlace">Maharana Pratap Auditorium: Noida</span>
-          <span className="eventPrice">₹499</span>
+          <span className="eventDate">{date} at {time}</span>
+          <span className="eventPlace">{place}</span>
+          <span className="eventPrice">₹{price}</span>
+          <span className="eventPrice"> Rating:  {rating} ⭐</span>
         </div>
         <div className="eventLayout">
           <div className="artistInfo">
             <span className="artist">Artist</span>
-            <span className="artistName">Gaurav Kapoor</span>
+            <span className="artistName">{artist}</span>
             <div className="socialMedia">
               <InstagramIcon sx={{ color: purple[500] }} />
               <FacebookIcon sx={{ color: blue[500] }} />
@@ -46,17 +53,14 @@ const Event = () => {
           <div className="eventDescription">
             <span className="descriptionTitle">Why you should attend?</span>
             <span className="descriptionText">
-              Gaurav Kapoor has won almost every open-mic he has ever
-              participated. His razor-sharp wit will cut deep in your weekly
-              blues. You’ll have a good cry..laughing!"
+              {description}
             </span>
           </div>
           <div className="eventCityPlaceLocation">
-            <span className="city">Noida</span>
-            <span className="place">Maharana Pratap Auditorium: Noida</span>
+            <span className="city">{city}</span>
+            <span className="place">{place}</span>
             <span className="location">
-              Nilgiri Hills Public School, F-1, F Block, Sector 50, Noida, NCR
-              201303, India
+              {location}
             </span>
           </div>
         </div>

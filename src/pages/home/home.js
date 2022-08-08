@@ -4,22 +4,22 @@ import EventList from "../../component/eventList/eventList";
 import FilterPanel from '../../component/filterPanel/filterPanel';
 import EmptyView from '../../component/emptyView/emptyview';
 import SearchBar from '../../component/searchBar/searchBar';
-import { eventList } from "../../event";
+import { eventsList } from "../../event";
 import "./home.css";
 
 
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedRating, setSelectedRating] = useState(null);
-  const [selectedPrice, setSelectedPrice] = useState([1000, 5000]);
+  const [selectedPrice, setSelectedPrice] = useState([100, 4500]);
 
-  const [cuisines, setCuisines] = useState([
-    { id: 1, checked: false, label: 'American' },
-    { id: 2, checked: false, label: 'Chinese' },
-    { id: 3, checked: false, label: 'Italian' },
-  ]);
+  // const [cities, setCities] = useState([
+  //   { id: 1, checked: false, label: 'New Delhi' },
+  //   { id: 2, checked: false, label: 'Gurgaon' },
+  //   { id: 3, checked: false, label: 'Noida' },
+  // ]);
 
-  const [list, setList] = useState(eventList);
+  const [list, setList] = useState(eventsList);
   const [resultsFound, setResultsFound] = useState(true);
   const [searchInput, setSearchInput] = useState('');
 
@@ -29,20 +29,20 @@ const Home = () => {
   const handleSelectRating = (event, value) =>
     !value ? null : setSelectedRating(value);
 
-  const handleChangeChecked = (id) => {
-    const cusinesStateList = cuisines;
-    const changeCheckedCuisines = cusinesStateList.map((item) =>
-      item.id === id ? { ...item, checked: !item.checked } : item
-    );
-    setCuisines(changeCheckedCuisines);
-  };
+  // const handleChangeChecked = (id) => {
+  //   const citiesStateList = cities;
+  //   const changeCheckedCities = citiesStateList.map((item) =>
+  //     item.id === id ? { ...item, checked: !item.checked } : item
+  //   );
+  //   setCities(changeCheckedCities);
+  // };
 
   const handleChangePrice = (event, value) => {
     setSelectedPrice(value);
   };
 
   const applyFilters = () => {
-    let updatedList = eventList;
+    let updatedList = eventsList;
 
     // Rating Filter
     if (selectedRating) {
@@ -58,16 +58,16 @@ const Home = () => {
       );
     }
 
-    // Cuisine Filter
-    const cuisinesChecked = cuisines
-      .filter((item) => item.checked)
-      .map((item) => item.label.toLowerCase());
+    // City Filter
+    // const citiesChecked = cities
+    //   .filter((item) => item.checked)
+    //   .map((item) => item.label.toLowerCase());
 
-    if (cuisinesChecked.length) {
-      updatedList = updatedList.filter((item) =>
-        cuisinesChecked.includes(item.cuisine)
-      );
-    }
+    // if (citiesChecked.length) {
+    //   updatedList = updatedList.filter((item) =>
+    //     citiesChecked.includes(item.cities)
+    //   );
+    // }
 
     // Search Filter
     if (searchInput) {
@@ -93,7 +93,7 @@ const Home = () => {
 
   useEffect(() => {
     applyFilters();
-  }, [selectedRating, selectedCategory, cuisines, searchInput, selectedPrice]);
+  }, [selectedRating, selectedCategory, searchInput, selectedPrice]);
 
   return (
     <>
@@ -113,8 +113,8 @@ const Home = () => {
               selectedRating={selectedRating}
               selectedPrice={selectedPrice}
               selectRating={handleSelectRating}
-              cuisines={cuisines}
-              changeChecked={handleChangeChecked}
+              // cities={cities}
+              // changeChecked={handleChangeChecked}
               changePrice={handleChangePrice} />
           </div>
           {/* List & Empty View */}

@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="navContainer">
                 <span className="logo"><Link to="/" style={{textDecoration:'none', color:'white'}}>EventBooking.com</Link></span>
-                <input type="text" placeholder="Where are you going?" className="navSearchInput" />
+               
                 <button className="navButton">
                     <Link to="/login" style={{textDecoration:'none', color:'black'}}>Login</Link>
                 </button>

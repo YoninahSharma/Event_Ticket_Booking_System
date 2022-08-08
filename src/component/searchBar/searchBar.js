@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 const SearchBar = ({ value, changeInput }) => (
 
   <div className='searchBar-wrap'>
-    <SearchIcon className="searchBar-icon" />
+    <SearchIcon className="searchBar-icon" fontSize="large" />
     <input
       type='text'
       placeholder='Search for Events arround you'

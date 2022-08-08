@@ -1,7 +1,7 @@
 import FilterListToggle from '../filterListToggle/filterListToggle';
-import { categoryList, ratingList } from '../../event';
+import { categoryList, ratingList } from '../../event.js';
 import "./filterPanel.css";
-import CheckboxProton from '../checkBoxProton/checkBoxProton';
+// import CheckboxProton from '../checkBoxProton/checkBoxProton';
 import SliderProton from '../sliderProton/sliderProton';
 const FilterPanel = ({
   selectedCategory,
@@ -9,8 +9,8 @@ const FilterPanel = ({
   selectedRating,
   selectedPrice,
   selectRating,
-  cuisines,
-  changeChecked,
+  // cities,
+  // changeChecked,
   changePrice,
 }) => (
   <div>
@@ -22,16 +22,16 @@ const FilterPanel = ({
         selectToggle={selectCategory}
       />
     </div>
-    <div className='input-group'>
+    {/* <div className='input-group'>
       <p className='label'>City</p>
-      {cuisines.map((cuisine) => (
+      {cities.map((city) => (
         <CheckboxProton
-          key={cuisine.id}
-          cuisine={cuisine}
+          key={city.id}
+          city={city}
           changeChecked={changeChecked}
         />
       ))}
-    </div>
+    </div> */}
     <div className='input-group'>
       <p className='label-range'>Price Range</p>
       <SliderProton value={selectedPrice} changePrice={changePrice} />
